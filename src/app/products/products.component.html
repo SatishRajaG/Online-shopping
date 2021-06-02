@@ -1,0 +1,6 @@
+<p>products works!</p>
+<h2>Products List</h2>
+<ul class="items">
+    <li *ngFor="let pro of productslist"  [class.selected]="isSelected(pro)" (click)="onselect(pro)"><span class="badge">{{pro.id}}</span>{{pro.name}}</li>
+</ul>
+<p> sum method in product component:{{sum1}}</p>

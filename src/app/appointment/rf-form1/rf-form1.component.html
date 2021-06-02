@@ -1,0 +1,13 @@
+<p>rf-form1 works!</p>
+<table class="table table-boardered">
+    <tr *ngIf="appointments.length>0">
+        <th>AppointmentId</th>
+       <!-- <th>Approval Status</th> -->
+        <th>Address</th>
+    </tr>
+    <tr *ngFor="let object of appointments">
+        <td>{{object.id}}</td>
+        <!-- <td>{{object.approvalstatus}}</td> -->
+        <td>{{object.centers.address</td>
+    </tr>
+</table>

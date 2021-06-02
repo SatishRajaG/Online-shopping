@@ -1,0 +1,21 @@
+<p>rf-form works!</p>
+<table class="table table-bordered=1">
+    <tr>
+        <th> appointmentid</th>
+        <th>dtestid</th>
+        <th>appointmentdate</th>
+        <th>approvalstatus</th>
+         <th>testResult</th>
+        <th>diagnosticCenter</th>
+        <th>patient</th>
+        <th>ADD</th>
+    </tr>
+    <tr *ngFor="let appointment of appointments">
+        <td>{{appointment.appointmentid}}</td>
+            <td>{{appointment.dtestid}}</td>
+            <td>{{appointment.approvalstatus}}</td>
+              <td>{{appointment.testResult.testReading}}</td>
+             <td>{{appointment.diagnosticCenter.name}}</td>
+             <td>{{appointment.patient.patientname}}</td>
+    </tr>
+</table>
